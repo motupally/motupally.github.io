@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+ 
+}
+
+:root {
+  --nav-bg: rgba(162, 161, 175, 0.95);
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.navbar-brand {
+  color: var(--color-primary) !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: rgba(15,23,42,0.8) !important;
+}
+
+.nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+/* custom navbar background and text for better contrast */
+.navbar-custom {
+  background: linear-gradient(90deg, var(--color-primary), #4338ca);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+/* make toggler icon visible on dark background */
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255,255,255,0.2);
+}
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1) brightness(1.2);
+}
+
+.container.mt-4 {
+  background: var(--color-surface);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+h1, h2 {
+  color: var(--color-text);
+}
+
+.App-link {
+  color: var(--color-secondary);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
